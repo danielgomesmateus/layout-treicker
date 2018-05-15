@@ -1,0 +1,17 @@
+{
+  "name": "treicker",
+  "version": "1.0.0",
+  "description": "Layout site Treicker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Gomes Mateus",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-jsmin": "^0.1.5"
+  }
+}
