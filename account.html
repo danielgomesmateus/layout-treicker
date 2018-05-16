@@ -7,9 +7,8 @@
     <title>
       Treicker
     </title>
-    <link href="public/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="public/css/style.css" rel="stylesheet" type="text/css">
+    <link href="public/css/style.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
@@ -63,7 +62,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="index.html">
-            <img src="public/images/logo/cropped-g4353.png" class="img-responsive logo-img">
+            <img src="public/images/logo/logo.png" class="img-responsive logo-img">
           </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -88,11 +87,6 @@
                 Blog
               </a>
             </li>
-            <li>
-              <a href="#">
-                Entre em contato
-              </a>
-            </li>
           </ul>
         </div>
       </div>
@@ -101,19 +95,21 @@
     <div class="content-page">
       <div class="container">
         <h1 class="title-page text-center">
-          Crie sua conta
+          <i class="fa fa-user-secret" aria-hidden="true"></i> Acesse sua conta
         </h1>
         <div class="col-md-6 col-md-offset-3 col-xs-12 col-sm-12">
           <div class="account-form">
             <form role="form">
               <div class="input-group">
                 <span class="input-group-addon">
-                  <i class="glyphicon glyphicon-user"></i>
+                  <i class="fa fa-user" aria-hidden="true"></i>
                 </span>
                 <input type="text" class="form-control" name="username" placeholder="Informe o seu nome de acesso ou email" required="required">
               </div>
               <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <span class="input-group-addon">
+                  <i class="fa fa-key" aria-hidden="true"></i>
+                </span>
                 <input type="password" class="form-control" name="password" placeholder="Informe sua senha" required="required">
               </div>
               <button type="submit" class="btn btn-success btn-login">
@@ -121,12 +117,12 @@
               </button>
               <hr />
               <div class="form-group">
-                <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show(); ">
+                <a href="recover-account.html">
                   <i class="fa fa-user-secret" aria-hidden="true"></i> Recuperar conta
                 </a>
               </div>
               <div class="form-group">
-                <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show(); ">
+                <a href="create-account.html">
                   <i class="fa fa-user-plus" aria-hidden="true"></i> Criar conta nova conta
                 </a>
               </div>
@@ -243,7 +239,6 @@
         </div>
       </section>
     </footer>
-    <script src="public/js/jquery/jquery-3.0.0.min.js"></script>
-    <script src="public/js/bootstrap/bootstrap.min.js"></script>
+    <script src="public/js/bootstrap/app.min.js"></script>
   </body>
 </html>

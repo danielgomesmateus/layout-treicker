@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="sumit kumar">
+    <title>
+      Treicker
+    </title>
+    <link href="public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="public/css/style.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="top-bar">
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4 hidden-xs">
+            <span class="nav-text">
+              <i class="fa fa-phone" aria-hidden="true"></i>  (31) 99890-3296
+              &nbsp;&nbsp;
+              <i class="fa fa-envelope" aria-hidden="true"></i> contato@treicker.com</span>
+            </div>
+          <div class="col-sm-4 text-center">
+            <a href="#" class="social">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social">
+              <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social">
+              <i class="fa fa-google" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social">
+              <i class="fa fa-dribbble" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="col-sm-4 text-right hidden-xs">
+            <ul class="tools">
+              <li class="dropdown">
+                <a class="" href="account.html">
+                  <i class="fa fa-user" aria-hidden="true"></i> Minha conta
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="public/images/logo/logo.png" class="img-responsive logo-img">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="">
+              <a href="index.html">
+                Página inicial
+              </a>
+            </li>
+            <li>
+              <a href="pages.html">
+                Serviços
+              </a>
+            </li>
+            <li>
+              <a href="gallery.html">
+                Galeria
+              </a>
+            </li>
+            <li>
+              <a href="blog.html">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content-page">
+      <div class="container">
+        <h1 class="title-page text-center">
+          <i class="fa fa-user-plus" aria-hidden="true"></i> Crie uma nova conta
+        </h1>
+        <div class="col-md-12 col-xs-12 col-sm-12">
+          <div class="account-form">
+            <form role="form">
+              <div class="row">
+                <div class="col-md-6 col-xs-12 col-sm-12">
+                  <div class="form-group">
+                    <label>
+                      Tipo de pessoa:
+                    </label>
+                    <select name="type_address" class="form-control" required="required">
+                      <option value="">
+                        Escolha uma opção
+                      </option>
+                      <option value="residential">
+                        Pessoa física
+                      </option>
+                      <option value="commercial">
+                        Pessoa jurídica
+                      </option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      CPF/CNPJ:
+                    </label>
+                    <input type="text" class="form-control" name="cpf_cnpj" placeholder="Informe o CFP para pessoa física ou CNPJ para pessoa jurídica" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Nome completo:
+                    </label>
+                    <input type="text" class="form-control" name="name" placeholder="Informe o seu nome completo" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Telefone:
+                    </label>
+                    <input type="text" class="form-control" name="phone" maxlength="14" placeholder="(00) 0000-0000" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Celular:
+                    </label>
+                    <input type="text" class="form-control" name="cell_phone" maxlength="15" placeholder="(00) 00000-0000" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Tipo de endereço:
+                    </label>
+                    <select name="type_address" class="form-control" required="required">
+                      <option value="">
+                        Escolha uma opção
+                      </option>
+                      <option value="residential">
+                        Residencial
+                      </option>
+                      <option value="commercial">
+                        Comercial
+                      </option>
+                      <option value="collection">
+                        Cobrança
+                      </option>
+                      <option>
+                        Outros
+                      </option value="others">
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      CEP:
+                    </label>
+                    <input type="text" class="form-control" name="cep" maxlength="8" placeholder="Inform o CEP" required="required">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-sm-12">
+                  <div class="form-group">
+                    <label>
+                      Complemento:
+                    </label>
+                    <input type="text" class="form-control" name="complement" maxlength="50" placeholder="Inform o complemento do endereço" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Bairro:
+                    </label>
+                    <input type="text" class="form-control" name="neighborhood" placeholder="Informe o bairro" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Cidade:
+                    </label>
+                    <input type="text" class="form-control" name="city" placeholder="Informe a cidade" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Estado:
+                    </label>
+                    <select class="form-control" name="state" required="required">
+                      <option value="">
+                        Escolha uma opção
+                      </option>
+                      <option value="AC">
+                        Acre
+                      </option>
+                      <option value="AL">
+                        Alagoas
+                      </option>
+                      <option value="AP">
+                        Amapá
+                      </option>
+                      <option value="AM">
+                        Amazonas
+                      </option>
+                      <option value="BA">
+                        Bahia
+                      </option>
+                      <option value="CE">
+                        Ceará
+                      </option>
+                      <option value="DF">
+                        Distrito Federal
+                      </option>
+                      <option value="ES">
+                        Espírito Santo
+                      </option>
+                      <option value="GO">
+                        Goiás
+                      </option>
+                      <option value="MA">
+                        Maranhão
+                      </option>
+                      <option value="MT">
+                        Mato Grosso
+                      </option>
+                      <option value="MS">
+                        Mato Grosso do Sul
+                      </option>
+                      <option value="MG">
+                        Minas Gerais
+                      </option>
+                      <option value="PA">
+                        Pará
+                      </option>
+                      <option value="PB">
+                        Paraíba
+                      </option>
+                      <option value="PR">
+                        Paraná
+                      </option>
+                      <option value="PE">
+                        Pernambuco
+                      </option>
+                      <option value="PI">
+                        Piauí
+                      </option>
+                      <option value="RJ">
+                        Rio de Janeiro
+                      </option>
+                      <option value="RN">
+                        Rio Grande do Norte
+                      </option>
+                      <option value="RS">
+                        Rio Grande do Sul
+                      </option>
+                      <option value="RO">
+                        Rondônia
+                      </option>
+                      <option value="RR">
+                        Roraima
+                      </option>
+                      <option value="SC">
+                        Santa Catarina
+                      </option>
+                      <option value="SP">
+                        São Paulo
+                      </option>
+                      <option value="SE">
+                        Sergipe
+                      </option>
+                      <option value="TO">
+                        Tocantins
+                      </option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Email:
+                    </label>
+                    <input type="text" class="form-control" name="email" placeholder="Informe um email de contato" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Senha:
+                    </label>
+                    <input type="password" class="form-control" name="password" placeholder="Informe sua senha de acesso" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Informe a senha novamente:
+                    </label>
+                    <input type="password" class="form-control" name="retype_password" placeholder="Informe sua senha de acesso novamente" required="required">
+                  </div>
+                </div>
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                  <p>
+                    Ao criar uma nova conta, eu concordo com os <a href="#" target="_blank">termos de uso</a> informados no site.
+                  </p>
+                  <button type="submit" class="btn btn-success btn-create-account">
+                    <i class="fa fa-cloud" aria-hidden="true"></i> Criar conta
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="nb-footer">
+      <div class="container-fluid">
+      <div class="col-md-12 col-xs-12 col-sm-12">
+        <div class="about">
+        	<img src="public/images/logo/cropped-g4353.png" class="img-responsive center-block" alt="">
+        	<p>
+            Integralizamos Transportes Fracionados e Expressos com Armazéns e com Entregas Rápidas. Assim conseguimos realizar suas coletas e ou entregas fora do horário comercial e dar continuidade ao processo da entrega no horário comercial.
+          </p>
+        	<div class="social-media">
+        		<ul class="list-inline">
+        			<li>
+                <a href="#" title="">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+        			<li>
+                <a href="#" title="">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+        			<li>
+                <a href="#" title="">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </li>
+        			<li>
+                <a href="#" title="">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+        		</ul>
+        	</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="footer-info-single">
+        	<h2 class="title">
+            Ajuda
+          </h2>
+        	<ul class="list-unstyled">
+        		<li>
+              <a href="pages.html" title=""><i class="fa fa-angle-double-right"></i>
+                Como funciona
+              </a>
+            </li>
+        		<li>
+              <a href="pages.html" title=""><i class="fa fa-angle-double-right"></i>
+                 FAQ's
+               </a>
+            </li>
+        		<li>
+              <a href="pages.html" title="">
+                <i class="fa fa-angle-double-right"></i>
+                Sitemap
+              </a>
+            </li>
+        	</ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-info-single">
+          	<h2 class="title">
+              Segurança e privacidade
+            </h2>
+          	<ul class="list-unstyled">
+          		<li>
+                <a href="pages.html" title="">
+                  <i class="fa fa-angle-double-right"></i>
+                  Termos de uso
+                </a>
+              </li>
+          		<li>
+                <a href="pages.html" title=""><i class="fa fa-angle-double-right"></i>
+                  Políticas de privacidade
+                </a>
+              </li>
+          		<li>
+                <a href="pages.html" title=""><i class="fa fa-angle-double-right"></i>
+                  Segurança da informação
+                </a>
+              </li>
+          	</ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-info-single">
+          	<h2 class="title">
+              Treicker
+            </h2>
+          	<p>
+              A solução para coletas e entregas fora do horário comercial
+            </p>
+          </div>
+        </div>
+      </div>
+      <section class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12">
+              <p class="text-center">
+                Copyright © 2017. Treicker - Todos os direitos reservados.
+              </p>
+            </div>
+            <div class="col-sm-6"></div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="public/js/bootstrap/app.min.js"></script>
+  </body>
+</html>
