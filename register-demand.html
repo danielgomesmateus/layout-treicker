@@ -95,7 +95,7 @@
     <div class="content-page">
       <div class="container">
         <h1 class="title-page text-center">
-          Crie uma nova conta
+          Cadastre sua demanda
         </h1>
         <div class="col-md-12 col-xs-12 col-sm-12">
           <div class="account-form">
@@ -104,208 +104,254 @@
                 <div class="col-md-6 col-xs-12 col-sm-12">
                   <div class="form-group">
                     <label>
-                      Tipo de pessoa:
+                      CEP de origem:
                     </label>
-                    <select name="type_address" class="form-control" required="required">
+                    <input type="text" class="form-control" name="from" id="cep_from" required="required" maxlength="8">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Endereço de origem:
+                    </label>
+                    <input type="text" class="form-control" name="address_from" id="address_from" readonly="true" required="required" maxlength="100">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      CEP de destino:
+                    </label>
+                    <input type="text" class="form-control" name="destiny" id="cep_destiny" required="required" maxlength="8">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Endereço de destino:
+                    </label>
+                    <input type="text" class="form-control" name="address_destiny" id="address_destiny" readonly="true" required="required" maxlength="100">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Modalidade:
+                    </label>
+                    <select class="form-control" name="modality" required="required">
                       <option value="">
-                        Escolha uma opção
+                        Selecione uma opção
                       </option>
-                      <option value="residential">
-                        Pessoa física
-                      </option>
-                      <option value="commercial">
-                        Pessoa jurídica
-                      </option>
+                      <optgroup label="Frete Doméstico">
+                        <option label="CARGA FRACIONADA" value="2">
+                          CARGA FRACIONADA
+                        </option>
+                        <option label="ENTREGA DIRETA" value="6">
+                          ENTREGA DIRETA
+                        </option>
+                      </optgroup>
+                      <optgroup label="Frete Aduaneiro Importação">
+                        <option label="DTA" value="3">
+                          DTA
+                        </option>
+                        <option label="CARREGAMENTO CONSOLIDADO" value="8">
+                          CARREGAMENTO CONSOLIDADO
+                        </option>
+                        <option label="DI" value="11">
+                          DI
+                        </option>
+                      </optgroup>
+                      <optgroup label="Frete Aduaneiro Exportação">
+                        <option label="DTA" value="4">
+                          DTA
+                        </option>
+                        <option label="ENTREGA DIRETA" value="7">
+                          ENTREGA DIRETA
+                        </option>
+                      </optgroup>
                     </select>
                   </div>
                   <div class="form-group">
                     <label>
-                      CPF/CNPJ:
+                      Tipo de produto:
                     </label>
-                    <input type="text" class="form-control" name="cpf_cnpj" placeholder="Informe o CFP para pessoa física ou CNPJ para pessoa jurídica" required="required">
-                  </div>
-                  <div class="form-group">
-                    <label>
-                      Nome completo:
-                    </label>
-                    <input type="text" class="form-control" name="name" placeholder="Informe o seu nome completo" required="required">
-                  </div>
-                  <div class="form-group">
-                    <label>
-                      Telefone:
-                    </label>
-                    <input type="text" class="form-control" name="phone" maxlength="14" placeholder="(00) 0000-0000" required="required">
-                  </div>
-                  <div class="form-group">
-                    <label>
-                      Celular:
-                    </label>
-                    <input type="text" class="form-control" name="cell_phone" maxlength="15" placeholder="(00) 00000-0000" required="required">
-                  </div>
-                  <div class="form-group">
-                    <label>
-                      Tipo de endereço:
-                    </label>
-                    <select name="type_address" class="form-control" required="required">
+                    <select class="form-control" name="type">
                       <option value="">
-                        Escolha uma opção
+                        Selecione uma opção
                       </option>
-                      <option value="residential">
-                        Residencial
+                      <option label="Alimentos" value="1">
+                        Alimentos
                       </option>
-                      <option value="commercial">
-                        Comercial
+                      <option label="Bebidas" value="2">
+                        Bebidas
                       </option>
-                      <option value="collection">
-                        Cobrança
+                      <option label="Cosméticos" value="3">
+                        Cosméticos
                       </option>
-                      <option>
+                      <option label="Documentos" value="4">
+                        Documentos
+                      </option>
+                      <option label="Eletrônicos e Informática" value="5">
+                        Eletrônicos e Informática
+                      </option>
+                      <option label="Floricultura" value="6">
+                        Floricultura
+                      </option>
+                      <option label="Líquidos Diversos" value="7">
+                        Líquidos Diversos
+                      </option>
+                      <option label="Livros e Materiais Gráficos" value="8">
+                        Livros e Materiais Gráficos
+                      </option>
+                      <option label="Máquinas ou Peças em Geral" value="9">
+                        Máquinas ou Peças em Geral
+                      </option>
+                      <option label="Móveis ou Objetos de Escritório" value="10">
+                        Móveis ou Objetos de Escritório
+                      </option>
+                      <option label="Objetos de alto valor" value="11">
+                        Objetos de alto valor
+                      </option>
+                      <option label="Produto Farmaceutico" value="12">
+                        Produto Farmaceutico
+                      </option>
+                      <option label="Produto Frágil" value="13">
+                        Produto Frágil
+                      </option>
+                      <option label="Roupas e Vestuários" value="14">
+                        Roupas e Vestuários
+                      </option>
+                      <option label="Produto Perigoso" value="15">
+                        Produto Perigoso
+                      </option>
+                      <option label="Inflamável" value="16">
+                        Inflamável
+                      </option>
+                      <option label="Outros" value="17">
                         Outros
-                      </option value="others">
+                      </option>
                     </select>
-                  </div>
-                  <div class="form-group">
-                    <label>
-                      CEP:
-                    </label>
-                    <input type="text" class="form-control" name="cep" maxlength="8" placeholder="Inform o CEP" required="required">
                   </div>
                 </div>
                 <div class="col-md-6 col-xs-12 col-sm-12">
                   <div class="form-group">
                     <label>
-                      Complemento:
+                      Nota fiscal:
                     </label>
-                    <input type="text" class="form-control" name="complement" maxlength="50" placeholder="Inform o complemento do endereço" required="required">
+                    <input type="text" class="form-control" name="nf" required="required" maxlength="10">
                   </div>
                   <div class="form-group">
                     <label>
-                      Bairro:
+                      Impostos suspensos:
                     </label>
-                    <input type="text" class="form-control" name="neighborhood" placeholder="Informe o bairro" required="required">
+                    <input type="text" class="form-control" name="taxes" required="required" maxlength="10">
                   </div>
                   <div class="form-group">
                     <label>
-                      Cidade:
+                      Peso real:
                     </label>
-                    <input type="text" class="form-control" name="city" placeholder="Informe a cidade" required="required">
+                    <input type="number" class="form-control" name="actual_weight" required="required" maxlength="4">
                   </div>
                   <div class="form-group">
                     <label>
-                      Estado:
+                      Peso cubado:
                     </label>
-                    <select class="form-control" name="state" required="required">
+                    <input type="number" class="form-control" name="cubed_weight" required="required" maxlength="4">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Peso total:
+                    </label>
+                    <input type="number" class="form-control" name="total_weight" required="required" maxlength="4">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Observações:
+                    </label>
+                    <input type="text" class="form-control" name="comments" maxlength="200">
+                  </div>
+                </div>
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                  <div class="division"></div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-sm-12">
+                  <div class="form-group">
+                    <label>
+                      Embalagem:
+                    </label>
+                    <select class="form-control" name="packing" required="required">
                       <option value="">
-                        Escolha uma opção
+                        Selecione uma opção
                       </option>
-                      <option value="AC">
-                        Acre
+                      <option label="Caixa" value="1">
+                        Caixa
                       </option>
-                      <option value="AL">
-                        Alagoas
+                      <option label="Pallet" value="2">
+                        Pallet
                       </option>
-                      <option value="AP">
-                        Amapá
+                      <option label="Sacaria Cafe" value="3">
+                        Sacaria Cafe
                       </option>
-                      <option value="AM">
-                        Amazonas
+                      <option label="Sacaria Geral" value="4">
+                        Sacaria Geral
                       </option>
-                      <option value="BA">
-                        Bahia
+                      <option label="Bombona" value="5">
+                        Bombona
                       </option>
-                      <option value="CE">
-                        Ceará
+                      <option label="Container Dry Box (20)" value="6">
+                        Container Dry Box (20)
                       </option>
-                      <option value="DF">
-                        Distrito Federal
+                      <option label="Container Dry/HC (40)" value="7">
+                        Container Dry/HC (40)
                       </option>
-                      <option value="ES">
-                        Espírito Santo
+                      <option label="Container Reefer (20)" value="8">
+                        Container Reefer (20)
                       </option>
-                      <option value="GO">
-                        Goiás
+                      <option label="Container Reefer (40)" value="9">
+                        Container Reefer (40)
                       </option>
-                      <option value="MA">
-                        Maranhão
+                      <option label="Container Open Top (20)" value="10">
+                        Container Open Top (20)
                       </option>
-                      <option value="MT">
-                        Mato Grosso
+                      <option label="Container Open Top (40)" value="11">
+                        Container Open Top (40)
                       </option>
-                      <option value="MS">
-                        Mato Grosso do Sul
+                      <option label="Container Flat Rack (20)" value="12">
+                        Container Flat Rack (20)
                       </option>
-                      <option value="MG">
-                        Minas Gerais
-                      </option>
-                      <option value="PA">
-                        Pará
-                      </option>
-                      <option value="PB">
-                        Paraíba
-                      </option>
-                      <option value="PR">
-                        Paraná
-                      </option>
-                      <option value="PE">
-                        Pernambuco
-                      </option>
-                      <option value="PI">
-                        Piauí
-                      </option>
-                      <option value="RJ">
-                        Rio de Janeiro
-                      </option>
-                      <option value="RN">
-                        Rio Grande do Norte
-                      </option>
-                      <option value="RS">
-                        Rio Grande do Sul
-                      </option>
-                      <option value="RO">
-                        Rondônia
-                      </option>
-                      <option value="RR">
-                        Roraima
-                      </option>
-                      <option value="SC">
-                        Santa Catarina
-                      </option>
-                      <option value="SP">
-                        São Paulo
-                      </option>
-                      <option value="SE">
-                        Sergipe
-                      </option>
-                      <option value="TO">
-                        Tocantins
+                      <option label="Container Flat Rack (40)" value="13">
+                        Container Flat Rack (40)
                       </option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label>
-                      Email:
+                      Volume:
                     </label>
-                    <input type="text" class="form-control" name="email" placeholder="Informe um email de contato" required="required">
+                    <input type="number" class="form-control" name="volume" required="required" maxlength="4">
                   </div>
                   <div class="form-group">
                     <label>
-                      Senha:
+                      Peso unitário (KG):
                     </label>
-                    <input type="password" class="form-control" name="password" placeholder="Informe sua senha de acesso" required="required">
+                    <input type="number" class="form-control" name="unit_weight" required="required" maxlength="4">
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12 col-sm-12">
+                  <div class="form-group">
+                    <label>
+                      Comprimento (CM):
+                    </label>
+                    <input type="number" class="form-control" name="length" required="required" maxlength="6">
                   </div>
                   <div class="form-group">
                     <label>
-                      Informe a senha novamente:
+                      Largura (CM):
                     </label>
-                    <input type="password" class="form-control" name="retype_password" placeholder="Informe sua senha de acesso novamente" required="required">
+                    <input type="number" class="form-control" name="width" required="required" maxlength="6">
+                  </div>
+                  <div class="form-group">
+                    <label>
+                      Altura (CM):
+                    </label>
+                    <input type="number" class="form-control" name="height" required="required" maxlength="6">
                   </div>
                 </div>
                 <div class="col-md-12 col-xs-12 col-sm-12">
-                  <p>
-                    Ao criar uma nova conta, eu concordo com os <a href="#" target="_blank">termos de uso</a> informados no site.
-                  </p>
                   <button type="submit" class="btn btn-success btn-create-account">
-                    <i class="fa fa-cloud" aria-hidden="true"></i> Criar conta
+                    <i class="fa fa-truck" aria-hidden="true"></i> Consultar frete
                   </button>
                 </div>
               </div>
@@ -318,7 +364,7 @@
       <div class="container-fluid">
       <div class="col-md-12 col-xs-12 col-sm-12">
         <div class="about">
-        	<img src="public/images/logo/cropped-g4353.png" class="img-responsive center-block" alt="">
+        	<img src="public/images/logo/logo.png" class="img-responsive center-block" alt="">
         	<p>
             Integralizamos Transportes Fracionados e Expressos com Armazéns e com Entregas Rápidas. Assim conseguimos realizar suas coletas e ou entregas fora do horário comercial e dar continuidade ao processo da entrega no horário comercial.
           </p>
@@ -422,6 +468,6 @@
         </div>
       </section>
     </footer>
-    <script src="public/js/bootstrap/app.min.js"></script>
+    <script src="public/js/app.min.js"></script>
   </body>
 </html>

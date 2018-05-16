@@ -8,7 +8,7 @@ var gulpImageMin =  require('gulp-imagemin');
 gulp.task('default', ['jsMin', 'cssMin', 'imagesMin', 'logo']);
 
 gulp.task('jsMin', function() {
-  gulp.src(['dev/js/jquery/jquery-3.0.0.min.js', 'dev/js/bootstrap/bootstrap.min.js'])
+  gulp.src(['dev/js/jquery/jquery-3.0.0.min.js', 'dev/js/bootstrap/bootstrap.min.js', 'dev/js/script.js'])
     .pipe(gulpConcat('app.js'))
     .pipe(gulpRename({suffix: '.min'}))
     .pipe(gulp.dest('public/js/'));
@@ -35,7 +35,7 @@ gulp.task('logo', function() {
 });
 
 gulp.task('observer', function() {
-  gulp.watch(['dev/js/jquery/jquery-3.0.0.min.js', 'dev/js/bootstrap/bootstrap.min.js'], ['jsMin']);
+  gulp.watch(['dev/js/jquery/jquery-3.0.0.min.js', 'dev/js/bootstrap/bootstrap.min.js', 'dev/js/script.js'], ['jsMin']);
   gulp.watch(['dev/css/bootstrap/bootstrap.min.css', 'dev/css/style.css'], ['cssMin']);
   gulp.watch('dev/images/*', ['imagesMin']);
   gulp.watch('dev/images/logo/*', ['logo']);
