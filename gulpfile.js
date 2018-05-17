@@ -8,8 +8,9 @@ var gulpImageMin =  require('gulp-imagemin');
 gulp.task('default', ['jsMin', 'cssMin', 'imagesMin', 'logo']);
 
 gulp.task('jsMin', function() {
-  gulp.src(['dev/js/jquery/jquery-3.0.0.min.js', 'dev/js/bootstrap/bootstrap.min.js', 'dev/js/script.js'])
+  gulp.src(['dev/js/jquery/jquery-3.0.0.js', 'dev/js/bootstrap/bootstrap.js', 'dev/js/script.js'])
     .pipe(gulpConcat('app.js'))
+    .pipe(gulpJsMin())
     .pipe(gulpRename({suffix: '.min'}))
     .pipe(gulp.dest('public/js/'));
 });
