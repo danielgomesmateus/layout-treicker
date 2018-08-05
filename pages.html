@@ -1,3 +1,5 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="pages.aspx.cs" Inherits="Treicker.pages" %>
+  
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -12,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
+      <form id="form1" runat="server">
     <nav class="top-bar">
       <div class="container-fluid">
           <div class="row">
@@ -44,7 +47,7 @@
           <div class="col-sm-4 text-right hidden-xs">
             <ul class="tools">
               <li class="dropdown">
-                <a class="" href="account.html">
+                <a class="" href="AccountAcess.aspx">
                   <i class="fa fa-user" aria-hidden="true"></i> Minha conta
                 </a>
               </li>
@@ -61,29 +64,29 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.aspx">
             <img src="public/images/logo/logo.png" class="img-responsive logo-img">
           </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
             <li class="">
-              <a href="index.html">
+              <a href="index.aspx">
                 Página inicial
               </a>
             </li>
             <li>
-              <a href="pages.html">
+              <a href="pages.aspx">
                 Serviços
               </a>
             </li>
             <li>
-              <a href="gallery.html">
+              <a href="gallery.aspx">
                 Galeria
               </a>
             </li>
             <li>
-              <a href="blog.html">
+              <a href="blog.aspx">
                 Blog
               </a>
             </li>
@@ -92,18 +95,399 @@
       </div>
     </nav>
 
-    <div class="content-page">
+
+       <div class="tg-column-3 tg-column-bottom-margin">
+                              
+                                 <div class="service_image_class">
+                                    <div class="image-wrap">
+                                       <img width="470" height="280" src="https://treicker.com/wp-content/uploads/2015/07/black-and-white-apple-1-470x280.jpg" class="attachment-himalayas-services size-himalayas-services wp-post-image" alt="" />                                    </div>
+                                 </div>
+                              
+                              <div class="service-desc-wrap">
+                                 <h5 class="service-title"><a title="entregas fora do horário comercial" href="https://treicker.com/parallax-effect/" alt="entregas fora do horário comercial"> entregas fora do horário comercial</a></h5>
+
+                                 <div class="service-content">
+                                    <p>Não precisa mais sofrer com entregas, o ESTÁ COMIGO vai lhe possibilitar agendar o recebimento de suas encomendas, a serem realizadas fora do horário comercial.</p>
+                                 </div>
+
+                                 <a class="service-read-more" href="https://treicker.com/parallax-effect/" title="entregas fora do horário comercial"> Read more<i class="fa fa-angle-double-right"> </i></a>
+                              </div>
+                           </div>
+
+
+    <div class="content-page" >
       <div class="container">
         <h1 class="title-page text-center">
-          Título da página
+          <asp:label ID="Titudo" runat="server" />
         </h1>
-        <div class="content-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et vulputate est. Praesent lacus ante, placerat id laoreet id, faucibus eu quam. Nullam risus augue, vulputate ut ante vel, commodo ultricies sapien. Phasellus eget vehicula erat. Phasellus vitae diam non augue scelerisque eleifend. Nullam aliquet ut est eget placerat. Phasellus tempus ipsum diam, eget laoreet tortor fermentum non. Nulla luctus id leo non faucibus. Duis sed odio et velit aliquam condimentum ac a mi. Fusce quis ornare lacus, id faucibus mi. Nullam iaculis ornare risus, quis pretium felis rutrum non. Suspendisse placerat diam ut mauris aliquam sagittis. Morbi dapibus sagittis mauris, at iaculis dui elementum non. Donec justo turpis, auctor volutpat lorem consequat, sodales venenatis erat.
-          Cras id sollicitudin eros, non faucibus urna. Vestibulum blandit efficitur velit eget pellentesque. Mauris tincidunt scelerisque velit. Nullam blandit luctus felis, nec mollis nibh rhoncus at. Sed suscipit enim iaculis gravida hendrerit. Duis ultrices dictum aliquet. Duis molestie hendrerit quam. Nulla euismod in nibh a imperdiet. Quisque sit amet accumsan magna. Vivamus lectus massa, congue ac semper sit amet, euismod vel tortor. Nulla ultricies, nisl vitae pretium efficitur, lorem lorem ornare magna, vitae posuere mi felis at quam. Duis sodales purus sed tempus aliquam. Donec eu nibh vitae metus sagittis tristique vitae id dui. Proin eleifend, ligula id viverra tristique, ante magna tempor diam, sed tincidunt risus risus vitae nulla. Curabitur lectus metus, accumsan ac turpis in, semper malesuada est. Vestibulum vitae nunc hendrerit, venenatis lacus nec, lobortis diam.
-          Proin ornare, orci at mollis accumsan, libero lacus tincidunt metus, quis porta elit lectus et odio. Mauris id molestie ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer ullamcorper maximus metus nec interdum. Cras mollis neque quis erat ultrices pellentesque. Fusce rutrum quis ante sed auctor. Phasellus vulputate volutpat dui, non tempor elit ullamcorper ac. Maecenas aliquam id ante nec feugiat. Pellentesque erat velit, eleifend at sem id, lobortis eleifend mi. Vestibulum in maximus metus. Donec suscipit arcu quis fermentum rhoncus. Nullam ut mattis urna, sit amet malesuada neque. Nam tincidunt tristique metus consequat vulputate. Vivamus in sem et nibh viverra varius.
-          Duis eu sapien fringilla, mollis risus id, porta neque. Sed malesuada felis et vehicula congue. Proin lobortis est sit amet tristique dapibus. Praesent ac diam et est venenatis efficitur. Proin et bibendum mi. Donec massa turpis, bibendum vitae elementum ac, suscipit in felis. Nam vehicula placerat orci quis hendrerit.
-          In at mauris laoreet sapien euismod maximus. Proin porta gravida tincidunt. Nullam sit amet risus sit amet nibh varius accumsan vitae sit amet ex. Cras mattis mi ut lobortis iaculis. Integer porttitor ac ipsum sollicitudin egestas. Maecenas molestie et erat eu ultricies. Integer at porttitor neque. Morbi at ex ac urna scelerisque pellentesque. Quisque faucibus luctus ultricies. Vivamus rhoncus mauris sem, et dictum erat sagittis sed.
+           <asp:label ID="retorno" runat="server" />
+                
         </div>
+
+        <!-->
+            Conteudo Fixo
+            <!-->
+
+        
+	<div id="content" class="site-content">
+		<section id="himalayas_call_to_action_widget-1" class="widget widget_call_to_action_block clearfix">      <div class="parallax-section cta-text-style-1 clearfix" style="background-image:url(http://treicker.com/wp-content/uploads/2018/04/TREICKER_SITE_Imagem_BHNoite4.jpg);background-repeat:no-repeat;background-size:cover;background-attachment:fixed;">
+         <div class="parallax-overlay"></div>
+         <div class="section-wrapper cta-text-section-wrapper">
+            <div class="tg-container">
+
+               <div class="cta-text-content">
+                                       <div class="cta-text-title">
+                        <h2>A SOLUÇÃO PARA COLETAS E ENTREGAS FORA DO HORÁRIO COMERCIAL</h2>
+                     </div>
+                                       <div class="cta-text-desc">
+                        <p>Integralizamos Transportes Fracionados e Expressos com Armazéns e com Entregas Rápidas.
+Assim conseguimos realizar suas coletas e ou entregas fora do horário comercial e dar continuidade ao processo da entrega no horário comercial</p>
+                     </div>
+                                 </div>
+                                 <a class="cta-text-btn" href="https://treicker.com/treicker-esta-comigo/" title="Baixe nosso App">Baixe nosso App</a>
+                           </div>
+         </div>
+      </div>
+      </section><section id="himalayas_service_widget-1" class="widget widget_service_block clearfix">      <div id="services" >
+         <div  class="section-wrapper">
+            <div class="tg-container">
+
+               <div class="section-title-wrapper">
+                  <h2 class="main-title">O que oferecemos</h2>                     <h4 class="sub-title">Problemas com horários de coletas e entregas, são coisas do passado.</h4>
+                                 </div>
+
+                                 <div class="service-content-wrapper clearfix">
+                     <div class="tg-column-wrapper clearfix">
+
+                        
+                           <div class="tg-column-3 tg-column-bottom-margin">
+                              
+                                 <div class="service_image_class">
+                                    <div class="image-wrap">
+                                       <img width="470" height="280" src="https://treicker.com/wp-content/uploads/2015/07/carriage-clock-797833_640-1-470x280.jpg" class="attachment-himalayas-services size-himalayas-services wp-post-image" alt="" />                                    </div>
+                                 </div>
+                              
+                              <div class="service-desc-wrap">
+                                 <h5 class="service-title"><a title="Coletas fora do horário comercial" href="https://treicker.com/one-page-menu/" alt="Coletas fora do horário comercial"> Coletas fora do horário comercial</a></h5>
+
+                                 <div class="service-content">
+                                    <p>Atendemos sua demanda fora do horário comercial. Sem correrias, sem stress, sem complicações. Entre em contato conosco agenda sua coleta. Nos a encaminharemos para o</p>
+                                 </div>
+
+                                 <a class="service-read-more" href="https://treicker.com/one-page-menu/" title="Coletas fora do horário comercial"> Read more<i class="fa fa-angle-double-right"> </i></a>
+                              </div>
+                           </div>
+                           
+                           <div class="tg-column-3 tg-column-bottom-margin">
+                              
+                                 <div class="service_image_class">
+                                    <div class="image-wrap">
+                                       <img width="470" height="280" src="https://treicker.com/wp-content/uploads/2015/07/black-and-white-apple-1-470x280.jpg" class="attachment-himalayas-services size-himalayas-services wp-post-image" alt="" />                                    </div>
+                                 </div>
+                              
+                              <div class="service-desc-wrap">
+                                 <h5 class="service-title"><a title="entregas fora do horário comercial" href="https://treicker.com/parallax-effect/" alt="entregas fora do horário comercial"> entregas fora do horário comercial</a></h5>
+
+                                 <div class="service-content">
+                                    <p>Não precisa mais sofrer com entregas, o ESTÁ COMIGO vai lhe possibilitar agendar o recebimento de suas encomendas, a serem realizadas fora do horário comercial.</p>
+                                 </div>
+
+                                 <a class="service-read-more" href="https://treicker.com/parallax-effect/" title="entregas fora do horário comercial"> Read more<i class="fa fa-angle-double-right"> </i></a>
+                              </div>
+                           </div>
+                           
+                           <div class="tg-column-3 tg-column-bottom-margin">
+                              
+                                 <div class="service_image_class">
+                                    <div class="image-wrap">
+                                       <img width="470" height="280" src="https://treicker.com/wp-content/uploads/2018/04/TREICKER_SITE_Imagem_Tansportadora2-470x280.jpg" class="attachment-himalayas-services size-himalayas-services wp-post-image" alt="" />                                    </div>
+                                 </div>
+                              
+                              <div class="service-desc-wrap">
+                                 <h5 class="service-title"><a title="encomendas agendadas de porta a porta" href="https://treicker.com/robust-features-2/" alt="encomendas agendadas de porta a porta"> encomendas agendadas de porta a porta</a></h5>
+
+                                 <div class="service-content">
+                                    <p>TREICKER realiza entregas agendadas de porta a porta. Gerenciamos toda a rota, incluindo multimodal e armazenagem quando necessário e cumprindo rigorosamente o agendamento de coleta</p>
+                                 </div>
+
+                                 <a class="service-read-more" href="https://treicker.com/robust-features-2/" title="encomendas agendadas de porta a porta"> Read more<i class="fa fa-angle-double-right"> </i></a>
+                              </div>
+                           </div>
+                            <div class="clearfix"></div> 
+                           <div class="tg-column-3 tg-column-bottom-margin">
+                              
+                                 <div class="service_image_class">
+                                    <div class="image-wrap">
+                                       <img width="470" height="280" src="https://treicker.com/wp-content/uploads/2018/04/TREICKER_SITE_Imagem_Remetentes-470x280.jpg" class="attachment-himalayas-services size-himalayas-services wp-post-image" alt="" />                                    </div>
+                                 </div>
+                              
+                              <div class="service-desc-wrap">
+                                 <h5 class="service-title"><a title="ESTÁ COMIGO para Remetentes / Vendedores / Expedidores" href="https://treicker.com/radiant-design/" alt="ESTÁ COMIGO para Remetentes / Vendedores / Expedidores"> ESTÁ COMIGO para Remetentes / Vendedores / Expedidores</a></h5>
+
+                                 <div class="service-content">
+                                    <p>Coletamos suas cargas fora do horário comercial; Postamos nos Correios, balcão de Transportadoras ou direto para o seu cliente, de acordo com os horários estabelecidos</p>
+                                 </div>
+
+                                 <a class="service-read-more" href="https://treicker.com/radiant-design/" title="ESTÁ COMIGO para Remetentes / Vendedores / Expedidores"> Read more<i class="fa fa-angle-double-right"> </i></a>
+                              </div>
+                           </div>
+                           
+                           <div class="tg-column-3 tg-column-bottom-margin">
+                              
+                                 <div class="service_image_class">
+                                    <div class="image-wrap">
+                                       <img width="470" height="280" src="https://treicker.com/wp-content/uploads/2018/04/TREICKER_SITE_Imagem_Tansportadora-470x280.jpg" class="attachment-himalayas-services size-himalayas-services wp-post-image" alt="" />                                    </div>
+                                 </div>
+                              
+                              <div class="service-desc-wrap">
+                                 <h5 class="service-title"><a title="ESTÁ COMIGO: para Transportadores" href="https://treicker.com/excellent-support/" alt="ESTÁ COMIGO: para Transportadores"> ESTÁ COMIGO: para Transportadores</a></h5>
+
+                                 <div class="service-content">
+                                    <p>Nosso objetivo é minimizar suas ocorrências com entregas inconclusivas, rotas improdutivas que geram custos adicionais para o seu negócio. Em segundo plano temos a captação</p>
+                                 </div>
+
+                                 <a class="service-read-more" href="https://treicker.com/excellent-support/" title="ESTÁ COMIGO: para Transportadores"> Read more<i class="fa fa-angle-double-right"> </i></a>
+                              </div>
+                           </div>
+                           
+                           <div class="tg-column-3 tg-column-bottom-margin">
+                              
+                                 <div class="service_image_class">
+                                    <div class="image-wrap">
+                                       <img width="470" height="280" src="https://treicker.com/wp-content/uploads/2018/04/TREICKER_SITE_Imagem_Destinatario-470x280.jpg" class="attachment-himalayas-services size-himalayas-services wp-post-image" alt="" />                                    </div>
+                                 </div>
+                              
+                              <div class="service-desc-wrap">
+                                 <h5 class="service-title"><a title="ESTÁ COMIGO para Destinatários / Compradores / Recebedores" href="https://treicker.com/free-theme/" alt="ESTÁ COMIGO para Destinatários / Compradores / Recebedores"> ESTÁ COMIGO para Destinatários / Compradores / Recebedores</a></h5>
+
+                                 <div class="service-content">
+                                    <p>Recebemos suas entregas, mesmo fora do horário comercial; Conferimos a integridade da embalagem. Você pode conferir a filmagem ou participar por vídeo conferência. SE você</p>
+                                 </div>
+
+                                 <a class="service-read-more" href="https://treicker.com/free-theme/" title="ESTÁ COMIGO para Destinatários / Compradores / Recebedores"> Read more<i class="fa fa-angle-double-right"> </i></a>
+                              </div>
+                           </div>
+                                                </div>
+                  </div>
+                              </div>
+         </div>
+      </div>
+      </section><section id="himalayas_portfolio_widget-1" class="widget widget_portfolio_block clearfix">
+      <div id="portfolio" class="" >
+         <div class="section-wrapper">
+            <div class="tg-container">
+               <div class="section-title-wrapper">
+                  <h2 class="main-title">&nbsp;</h2>
+                   <h2 class="main-title">PORTFOLIO</h2> 
+                   
+                
+                   <br />
+                   <asp:GridView ID="GridFrete" runat="server">
+                   </asp:GridView>
+                   <br />
+ </div>
+            </div>
+
+                           <div class="Portfolio-content-wrapper clearfix">
+                  
+                     <div class="portfolio-images-wrapper">
+                        
+                        <div class="port-img">
+                           <img width="400" height="350" src="https://treicker.com/wp-content/uploads/2015/07/portfolio-1-1-400x350.jpg" class="attachment-himalayas-portfolio-image size-himalayas-portfolio-image wp-post-image" alt="" />                        </div>
+
+                        <div class="portfolio-hover">
+                           <div class="port-link">
+                              <a class="image-popup" href="https://treicker.com/wp-content/uploads/2015/07/portfolio-1-1.jpg"><i class="fa fa-search-plus"></i></a>
+                              <a href="https://treicker.com/donec-dapibus/" title="Entregas porta a porta"><i class="fa fa-link"></i></a>
+                           </div>
+
+                           <div class="port-title-wrapper">
+                              <h4 class="port-title"><a href="https://treicker.com/donec-dapibus/" title="Entregas porta a porta">Entregas porta a porta</a></h4>
+                              <div class="port-desc"> Usando as melhores tecnologias de rastreamento, de comunicação instantânea e, principalmente, de inteligência artificial, nosso... </div>
+                           </div>
+                        </div>
+                     </div>
+                  
+                     <div class="portfolio-images-wrapper">
+                        
+                        <div class="port-img">
+                           <img width="400" height="350" src="https://treicker.com/wp-content/uploads/2018/04/TREICKER_SITE_Imagem_E-Commerce-400x350.jpg" class="attachment-himalayas-portfolio-image size-himalayas-portfolio-image wp-post-image" alt="" />                        </div>
+
+                        <div class="portfolio-hover">
+                           <div class="port-link">
+                              <a class="image-popup" href="https://treicker.com/wp-content/uploads/2018/04/TREICKER_SITE_Imagem_E-Commerce.jpg"><i class="fa fa-search-plus"></i></a>
+                              <a href="https://treicker.com/maecenas-sodales/" title="E-Commerces Parceiros"><i class="fa fa-link"></i></a>
+                           </div>
+
+                           <div class="port-title-wrapper">
+                              <h4 class="port-title"><a href="https://treicker.com/maecenas-sodales/" title="E-Commerces Parceiros">E-Commerces Parceiros</a></h4>
+                              <div class="port-desc"> Atendemos através de plataformas e sites de e-commerces. Fazendo suas compras pela internet, no momento... </div>
+                           </div>
+                        </div>
+                     </div>
+                  
+                     <div class="portfolio-images-wrapper">
+                        
+                        <div class="port-img">
+                           <img width="400" height="350" src="https://treicker.com/wp-content/uploads/2015/07/portfolio-4-1-400x350.jpg" class="attachment-himalayas-portfolio-image size-himalayas-portfolio-image wp-post-image" alt="" />                        </div>
+
+                        <div class="portfolio-hover">
+                           <div class="port-link">
+                              <a class="image-popup" href="https://treicker.com/wp-content/uploads/2015/07/portfolio-4-1.jpg"><i class="fa fa-search-plus"></i></a>
+                              <a href="https://treicker.com/donec-porta/" title="treicker e está comigo são para todos"><i class="fa fa-link"></i></a>
+                           </div>
+
+                           <div class="port-title-wrapper">
+                              <h4 class="port-title"><a href="https://treicker.com/donec-porta/" title="treicker e está comigo são para todos">treicker e está comigo são para todos</a></h4>
+                              <div class="port-desc"> Você precisa transportar algo, mudanças, carretos, mesmo pequenos volumes. . . Conte conosco. Fazemos todos... </div>
+                           </div>
+                        </div>
+                     </div>
+                  
+                     <div class="portfolio-images-wrapper">
+                        
+                        <div class="port-img">
+                           <img width="194" height="259" src="https://treicker.com/wp-content/uploads/2018/04/Modelo_Aguardando_Coleta.jpg" class="attachment-himalayas-portfolio-image size-himalayas-portfolio-image wp-post-image" alt="" />                        </div>
+
+                        <div class="portfolio-hover">
+                           <div class="port-link">
+                              <a class="image-popup" href="https://treicker.com/wp-content/uploads/2018/04/Modelo_Aguardando_Coleta.jpg"><i class="fa fa-search-plus"></i></a>
+                              <a href="https://treicker.com/aliquam-malesuada/" title="Minimizar entregas não conclusivas"><i class="fa fa-link"></i></a>
+                           </div>
+
+                           <div class="port-title-wrapper">
+                              <h4 class="port-title"><a href="https://treicker.com/aliquam-malesuada/" title="Minimizar entregas não conclusivas">Minimizar entregas não conclusivas</a></h4>
+                              <div class="port-desc"> Buscamos excelência, por isso podemos assumir o compromisso de que iremos minimizar as entregas não... </div>
+                           </div>
+                        </div>
+                     </div>
+                  
+                     <div class="portfolio-images-wrapper">
+                        
+                        <div class="port-img">
+                           <img width="400" height="350" src="https://treicker.com/wp-content/uploads/2015/07/portfolio-6-1-400x350.jpg" class="attachment-himalayas-portfolio-image size-himalayas-portfolio-image wp-post-image" alt="" />                        </div>
+
+                        <div class="portfolio-hover">
+                           <div class="port-link">
+                              <a class="image-popup" href="https://treicker.com/wp-content/uploads/2015/07/portfolio-6-1.jpg"><i class="fa fa-search-plus"></i></a>
+                              <a href="https://treicker.com/curabitur-suscipit/" title="Entregas em horário noturno"><i class="fa fa-link"></i></a>
+                           </div>
+
+                           <div class="port-title-wrapper">
+                              <h4 class="port-title"><a href="https://treicker.com/curabitur-suscipit/" title="Entregas em horário noturno">Entregas em horário noturno</a></h4>
+                              <div class="port-desc"> Tendência mundial. a Está Comigo, sai na frente, e para a  Região Metropolitana de Belo... </div>
+                           </div>
+                        </div>
+                     </div>
+                  
+                     <div class="portfolio-images-wrapper">
+                        
+                        <div class="port-img">
+                           <img width="400" height="350" src="https://treicker.com/wp-content/uploads/2015/07/portfolio-7-1-400x350.jpg" class="attachment-himalayas-portfolio-image size-himalayas-portfolio-image wp-post-image" alt="" />                        </div>
+
+                        <div class="portfolio-hover">
+                           <div class="port-link">
+                              <a class="image-popup" href="https://treicker.com/wp-content/uploads/2015/07/portfolio-7-1.jpg"><i class="fa fa-search-plus"></i></a>
+                              <a href="https://treicker.com/etiam-convallis/" title="Interaja em tempo real"><i class="fa fa-link"></i></a>
+                           </div>
+
+                           <div class="port-title-wrapper">
+                              <h4 class="port-title"><a href="https://treicker.com/etiam-convallis/" title="Interaja em tempo real">Interaja em tempo real</a></h4>
+                              <div class="port-desc"> Nosso aplicativo disponibiliza a interação entre as partes do processo  de entrega (Destinatário, transportador e... </div>
+                           </div>
+                        </div>
+                     </div>
+                  
+                     <div class="portfolio-images-wrapper">
+                        
+                        <div class="port-img">
+                           <img width="400" height="350" src="https://treicker.com/wp-content/uploads/2015/07/portfolio-8-1-400x350.jpg" class="attachment-himalayas-portfolio-image size-himalayas-portfolio-image wp-post-image" alt="" />                        </div>
+
+                        <div class="portfolio-hover">
+                           <div class="port-link">
+                              <a class="image-popup" href="https://treicker.com/wp-content/uploads/2015/07/portfolio-8-1.jpg"><i class="fa fa-search-plus"></i></a>
+                              <a href="https://treicker.com/pellentesque/" title="Entregas nos finais de semana"><i class="fa fa-link"></i></a>
+                           </div>
+
+                           <div class="port-title-wrapper">
+                              <h4 class="port-title"><a href="https://treicker.com/pellentesque/" title="Entregas nos finais de semana">Entregas nos finais de semana</a></h4>
+                              <div class="port-desc"> Sem atropelos, sem correrias, sem complicações. Receba suas encomendas no final de semana, no conforto... </div>
+                           </div>
+                        </div>
+                     </div>
+                  
+                     <div class="portfolio-images-wrapper">
+                        
+                        <div class="port-img">
+                           <img width="400" height="350" src="https://treicker.com/wp-content/uploads/2015/07/portfolio-3-1-400x350.jpg" class="attachment-himalayas-portfolio-image size-himalayas-portfolio-image wp-post-image" alt="" />                        </div>
+
+                        <div class="portfolio-hover">
+                           <div class="port-link">
+                              <a class="image-popup" href="https://treicker.com/wp-content/uploads/2015/07/portfolio-3-1.jpg"><i class="fa fa-search-plus"></i></a>
+                              <a href="https://treicker.com/aenean-nec/" title="Entregas comemorativas agendadas"><i class="fa fa-link"></i></a>
+                           </div>
+
+                           <div class="port-title-wrapper">
+                              <h4 class="port-title"><a href="https://treicker.com/aenean-nec/" title="Entregas comemorativas agendadas">Entregas comemorativas agendadas</a></h4>
+                               <asp:Table ID="Table1" runat="server" Height="68px" Width="274px">
+                               </asp:Table>
+                               <p class="port-title">&nbsp;</p>
+                               <p class="port-title">&nbsp;</p>
+                              <div class="port-desc"> Aquela entrega de presente, com hora marcada para acontecer&#8230; e com a ESTÁ COMIGO. </div>
+                           </div>
+                        </div>
+                     </div>
+                                 </div><!-- .Portfolio-content-wrapper -->
+                        </div>
+      </div><!-- .section-wrapper -->
+
+      </section><section id="himalayas_featured_posts_widget-1" class="widget widget_featured_posts_block clearfix">
+      <div id="featured" class="parallax-section" style="background-image:url(http://demo.themegrill.com/himalayas/wp-content/uploads/sites/36/2015/07/blog-bg1.jpg);background-repeat:no-repeat;background-size:cover;background-attachment:fixed;">
+         <div class="parallax-overlay"> </div>
+         <div class="section-wrapper">
+            <div class="tg-container">
+
+               <div class="section-title-wrapper">
+                  <h2 class="main-title">BLOG</h2>                                       <h4 class="sub-title">
+                        Escolha o tema que te interessa e fique à vontade.
+Adoramos conhecer pessoas bonitas e interessantes como você.                     </h4>
+                                 </div>
+
+               <div class="blog-content-wrapper clearfix">
+               <div class="tg-column-wrapper clearfix">
+
+                  
+                     <div class="tg-column-3 tg-column-bottom-margin">
+                     <div class="blog-block">
+
+                        
+                        <div class="blog-content-wrapper">
+
+                           <h5 class="blog-title"> <a href="https://treicker.com/eventos-e-comemoracoes/" title="Eventos e comemorações">Eventos e comemorações</a></h5>
+
+                           <div class="posted-date">
+
+                                                               <span>
+                                    Posted in <a href="https://treicker.com/category/eventos_comemoracoes/" rel="category tag">Eventos_Comemoracoes</a>                                 </span>
+                                                            <span>
+                                 by                                  <a href="https://treicker.com/author/roberto-marciel/" title="roberto.marciel">roberto.marciel</a>
+                              </span>
+
+                              <span>
+                                 on <span><a href="https://treicker.com/eventos-e-comemoracoes/" title="4:01 pm" rel="bookmark"> <time class="entry-date published" datetime="2018-04-11T16:01:19+00:00">April 11, 2018</time></a></span>                              </span>
+                           </div>
+
+                           <div class="blog-content">
+                              <p>Calendário anual de eventos relacionados com Comércio, Logística e Transportes. Diversão também tem vez. Olha, o calendário de festas e comemorações, Está Comigo, aqui. Clique</p>
+                           </div>
+
+                           <a class="blog-readmore" href="https://treicker.com/eventos-e-comemoracoes/" title="Eventos e comemorações"> Read more <i class="fa fa-angle-double-right"> </i> </a>
+                        </div>
+
+                     </div><!-- .blog-block -->
+                     </div><!-- .tg-column-3 -->
+
+
     </div>
     </div>
     <footer class="nb-footer">
@@ -147,17 +531,17 @@
           </h2>
         	<ul class="list-unstyled">
         		<li>
-              <a href="pages.html" title=""><i class="fa fa-angle-double-right"></i>
+              <a href="pages.aspx" title=""><i class="fa fa-angle-double-right"></i>
                 Como funciona
               </a>
             </li>
         		<li>
-              <a href="pages.html" title=""><i class="fa fa-angle-double-right"></i>
+              <a href="pages.aspx" title=""><i class="fa fa-angle-double-right"></i>
                  FAQ's
                </a>
             </li>
         		<li>
-              <a href="pages.html" title="">
+              <a href="pages.aspx" title="">
                 <i class="fa fa-angle-double-right"></i>
                 Sitemap
               </a>
@@ -172,18 +556,18 @@
             </h2>
           	<ul class="list-unstyled">
           		<li>
-                <a href="pages.html" title="">
+                <a href="pages.aspx" title="">
                   <i class="fa fa-angle-double-right"></i>
                   Termos de uso
                 </a>
               </li>
           		<li>
-                <a href="pages.html" title=""><i class="fa fa-angle-double-right"></i>
+                <a href="pages.aspx" title=""><i class="fa fa-angle-double-right"></i>
                   Políticas de privacidade
                 </a>
               </li>
           		<li>
-                <a href="pages.html" title=""><i class="fa fa-angle-double-right"></i>
+                <a href="pages.aspx" title=""><i class="fa fa-angle-double-right"></i>
                   Segurança da informação
                 </a>
               </li>
@@ -215,5 +599,6 @@
       </section>
     </footer>
     <script src="public/js/app.min.js"></script>
+      </form>
   </body>
 </html>
